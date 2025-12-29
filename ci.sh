@@ -1,5 +1,11 @@
 #!/bin/bash
-set -o errexit
+
 set -o nounset
-    git fsck --lost-found
-if [ x -eq "bla" ]
+
+# lint stage s if it exits with 0
+if [ npx lint-staged ];
+then
+    # run tests if it exists but none exists
+    # Create a docker file and build a docker image
+    # docker run with docker compose
+fi
